@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Abyssinica SIL', serif;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1a1a1a;
+  color: #eee;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #d1e7c4; /* soft green */
+  text-decoration: none;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 1.4rem;
+}
+
+.nav-menu ul li {
+  position: relative;
+}
+
+.nav-menu ul li a {
+  color: #d1e7c4;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 0.5rem 0;
+}
+
+.nav-menu ul li a:hover,
+.nav-menu ul li a.active {
+  color: #4caf50; /* bright green */
+  border-bottom: 2px solid #4caf50;
+}
+
+/* Toggle button */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #d1e7c4;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Sections */
+
+.section {
+  padding: 4rem 0;
+}
+
+/* Background and overlay for Home, About, Services, Contact */
+.home-section,
+.about-section,
+.services-section,
+.contact-section {
+  position: relative;
+  background-image: url('images/bk.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: #fff;
+  padding: 4rem 0;
+}
+
+.home-section::before,
+.about-section::before,
+.services-section::before,
+.contact-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+  z-index: 0;
+}
+
+.home-section > .container,
+.about-section > .container,
+.services-section > .container,
+.contact-section > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Updated Home Section */
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.home-text {
+  max-width: 600px;
+}
+
+.home-text h1 {
+  font-size: 4.8rem;
+  margin-bottom: 1rem;
+}
+
+.home-text h1 span {
+  color: #4caf50;
+}
+
+.home-text h2.dynamic-text {
+  color: #ffffff;
+  font-weight: 700;
+  font-style: italic;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  margin-bottom: 1.5rem;
+  font-size: 2.8rem;
+  height: auto;
+}
+
+.home-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1.1rem;
+  color: #d1e7c4;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.6rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #3a8a3a;
+}
+
+.btn-outline {
+  border: 2px solid #8baf4c;
+  color: #4caf78;
+  background: none;
+}
+
+.btn-outline:hover {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+.home-image img {
+  width: 500px;
+  border-radius: 15px;
+  box-shadow: 6px  15px rgba(0, 0, 0, 0.15);
+}
