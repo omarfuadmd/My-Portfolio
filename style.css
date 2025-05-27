@@ -17,7 +17,7 @@ body {
   margin: 0 auto;
 }
 
-/* Navbar */
+
 .navbar {
   background-color: #1a1a1a;
   color: #eee;
@@ -36,7 +36,7 @@ body {
 .logo {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #d1e7c4; /* soft green */
+  color: #d1e7c4; 
   text-decoration: none;
 }
 
@@ -60,11 +60,11 @@ body {
 
 .nav-menu ul li a:hover,
 .nav-menu ul li a.active {
-  color: #4caf50; /* bright green */
+  color: #4caf50; 
   border-bottom: 2px solid #4caf50;
 }
 
-/* Toggle button */
+
 .nav-toggle {
   display: none;
   background: none;
@@ -74,13 +74,13 @@ body {
   cursor: pointer;
 }
 
-/* Sections */
+
 
 .section {
   padding: 4rem 0;
 }
 
-/* Background and overlay for Home, About, Services, Contact */
+
 .home-section,
 .about-section,
 .services-section,
@@ -102,7 +102,7 @@ body {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+  background-color: rgba(0, 0, 0, 0.5); 
   z-index: 0;
 }
 
@@ -114,7 +114,7 @@ body {
   z-index: 1;
 }
 
-/* Updated Home Section */
+
 .home-section {
   display: flex;
   align-items: center;
@@ -197,19 +197,4 @@ body {
   width: 500px;
   border-radius: 15px;
   box-shadow: 6px  15px rgba(0, 0, 0, 0.15);
-}
-/* Navbar */
-.navbar {
-  background-color: #1a1a1a;
-  color: #eee;
-  padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.navbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
