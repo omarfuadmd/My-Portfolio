@@ -1,4 +1,3 @@
-
 // Navbar toggle for mobile
 const navToggle = document.querySelector('.nav-toggle');
 const navMenu = document.querySelector('.nav-menu ul');
@@ -14,31 +13,22 @@ if (dynamicText) {
   const phrases = ['Frontend Developer', 'Web Designer'];
   let currentPhrase = 0;
   let letterIndex = 0;
-  let deleting = false;
-  let delay = 100;
-  
+
   function type() {
-    if (!deleting) {
+    if (letterIndex < phrases[currentPhrase].length) {
       dynamicText.textContent += phrases[currentPhrase][letterIndex];
       letterIndex++;
-      if (letterIndex === phrases[currentPhrase].length) {
-        deleting = true;
-        delay = 1500;
-      } else {
-        delay = 100;
-      }
+      setTimeout(type, 100);
     } else {
-      dynamicText.textContent = phrases[currentPhrase].substring(0, letterIndex - 1);
-      letterIndex--;
-      if (letterIndex === 0) {
-        deleting = false;
+      // Wait before moving to the next phrase
+      setTimeout(() => {
         currentPhrase = (currentPhrase + 1) % phrases.length;
-        delay = 500;
-      } else {
-        delay = 50;
-      }
+        dynamicText.textContent = ''; // Clear text before next phrase
+        letterIndex = 0;
+        type();
+      }, 2000); // pause after full phrase
     }
-    setTimeout(type, delay);
   }
+
   type();
 }
