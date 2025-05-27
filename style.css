@@ -198,3 +198,18 @@ body {
   border-radius: 15px;
   box-shadow: 6px  15px rgba(0, 0, 0, 0.15);
 }
+/* Navbar */
+.navbar {
+  background-color: #1a1a1a;
+  color: #eee;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
