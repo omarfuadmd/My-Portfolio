@@ -198,3 +198,18 @@ body {
   border-radius: 15px;
   box-shadow: 6px  15px rgba(0, 0, 0, 0.15);
 }
+/* About Section */
+.about-section .about-content {
+  display: flex;
+  gap: 10rem;
+  align-items: normal;
+}
+
+.about-text {
+  flex: 15;
+  color: #d1e7c4;
+}
+.about-image img {
+  max-width: 400px;
+  border-radius: 12px;
+}
