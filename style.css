@@ -240,8 +240,47 @@ body {
   transform: translateY(-8px);
 }
 
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
 .service-icon {
   font-size: 3rem;
   color: #4caf50;
   margin-bottom: 1rem;
+}
+
+/* Contact Section */
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: vertical;
+  font-size: 1rem;
+  color: #333;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #4caf50;
 }
