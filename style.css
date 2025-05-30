@@ -284,3 +284,16 @@ body {
   outline: none;
   border-color: #4caf50;
 }
+
+.footer {
+  background-color: #1a1a1a;
+  color: #d1e7c4;
+  padding: 2.5rem 0 1.5rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
