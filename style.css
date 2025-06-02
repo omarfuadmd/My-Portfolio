@@ -36,8 +36,9 @@ body {
 .logo {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #d1e7c4; 
+  color: #d1e7c4;
   text-decoration: none;
+  text-shadow: 0 0 5px #4caf50, 0 0 10px #4caf50, 0 0 20px #4caf50;
 }
 
 .nav-menu ul {
