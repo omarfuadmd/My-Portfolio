@@ -357,3 +357,33 @@ body {
   border-top: 1px solid #333;
   margin-top: 2rem;
 }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-section .about-content {
+    flex-direction: column;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    background-color: #1a1a1a;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    display: none;
+  }
+
+  .nav-menu ul.active {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
